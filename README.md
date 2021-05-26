@@ -1,4 +1,4 @@
-# OpenWrt firmware for Newifi D2
+# OpenWrt firmware for 斐讯K3
 
 Auto build OpenWrt firmware for Newifi D2 via GitHub Actions
 
