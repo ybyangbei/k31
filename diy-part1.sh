@@ -16,3 +16,12 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+# k3设置
+rm -rf package/lean/k3screenctrl
+git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/k3/luci-app-k3screenctrl
+git clone https://github.com/lwz322/k3screenctrl.git package/k3/k3screenctrl
+git clone https://github.com/lwz322/k3screenctrl_build.git package/k3/k3screenctrl_build
+
+# 删除默认配置
+#rm -rf package/lean/default-settings
